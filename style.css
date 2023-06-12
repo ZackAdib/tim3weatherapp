@@ -1,0 +1,65 @@
+body {
+  color: rgb(7, 1, 1);
+  background: rgb(7, 200, 243);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.cityInput, .cityName, .inputContainer{
+  margin: 3px;
+  padding:5px;
+  text-align:center;
+  font-size:20px;
+  font-weight:bold;
+}
+
+
+button{
+  margin: 3px;
+  padding:5px;
+  text-align:center;
+  font-size:20px;
+  font-weight:bold;
+}
+
+
+.icons{
+  display: inline-block;
+  float: left;
+  height: 200px;
+  width: 190px;
+  margin: 20px;
+  border: 5px solid rgb(48, 47, 47);
+  border-radius: 10px;
+}
+
+
+.image{
+  height: 140px;
+  width: 100%;
+}
+
+
+.imgClass{
+  height: 140px;
+  width: 100%;
+}
+
+
+.weather{
+  margin: 5px;
+ /*  background-color: rgb(106, 215, 255); */
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.Temprature{
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  height: 25px;
+  width: 70px;
+  margin: 0 0 5px 5 px;
+}
