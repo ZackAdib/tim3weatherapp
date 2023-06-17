@@ -1,18 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
-    color: rgb(7, 1, 1);
-    background: rgb(7, 200, 243);
+    color: rgb(255, 255, 255);
+    /*background: rgb(87, 210, 238);*/
     font-family: 'Montserrat', sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?sky');
   }
   
+  .cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
   
-  .cityInput, .cityName, .inputContainer{
+
+  .backgroundCard {
+    
+    background-color: rgba(0, 0, 0, 0.7); /* Black color with 50% transparency */
+    width: 1100px; /* Adjust the width as per your design */
+    height: 550px; /* Adjust the height as per your design */
+    border-radius: 10px;
+  }
+  
+
+  .cityName, .inputContainer{
     margin: 3px;
     padding:5px;
     text-align:center;
     font-size:20px;
-    font-weight:bold;
+    font-weight: normal;
+  }
+
+  #cityInput{
+    margin: 3px;
+    padding:5px;
+    text-align:left;
+    font-size:15px;
+    font-weight: normal;
   }
   
   input{
@@ -34,9 +59,10 @@ body {
     margin-bottom: 50px;
   }
 
-  
-
   .iconsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 70%;
     left: 50%;
@@ -49,8 +75,8 @@ body {
 }
   
   button{
-    background-color: #007bff;
-    color: #fff;
+    background-color: #191970;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -61,7 +87,7 @@ body {
   }
   
   button:hover{
-    background-color: #0062cc;
+    background-color: #5d5d88;
   }
   
   .tengah {
@@ -78,11 +104,10 @@ body {
 
   .more{
     float: left;
-    background-color: #f0f8ff9b;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
     margin: 8px;
     border-radius: 5px;
-    border: 1px solid rgb(48, 47, 47);
   }
 
   .ikon{
@@ -96,9 +121,8 @@ body {
     float: left;
     height: 60px;
     width: 190px;
-    margin: 20px;
-    background-color: #ffffff9b;
-    border: 2px solid rgb(48, 47, 47);
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
   }
   
@@ -117,7 +141,6 @@ body {
   
   .weather{
     margin: 5px;
-    background-color: rgb(106, 215, 255);
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
