@@ -5,6 +5,7 @@ body {
     /*background: rgb(87, 210, 238);*/
     font-family: 'Montserrat', sans-serif;
     background-image: url('https://source.unsplash.com/1600x900/?sky');
+    background-size: cover;
   }
   
   .cardContainer {
