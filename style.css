@@ -18,7 +18,7 @@ body {
 
   .backgroundCard {
     
-    background-color: #38383880; /* Black color with 50% transparency */
+    background-color: rgba(56, 56, 56, 0.702); /* Black color with 50% transparency */
     width: 1100px; /* Adjust the width as per your design */
     height: 550px; /* Adjust the height as per your design */
     border-radius: 10px;
