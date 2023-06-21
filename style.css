@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body {
+    overflow: hidden;
     color: rgb(255, 255, 255);
     /*background: rgb(87, 210, 238);*/
     font-family: 'Montserrat', sans-serif;
@@ -9,7 +10,7 @@ body {
   }
   
   .cardContainer {
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
     height: 100vh; /* Adjust the height as needed */
@@ -17,7 +18,7 @@ body {
   
 
   .backgroundCard {
-    
+    /*backdrop-filter: blur(10px);*/
     background-color: rgba(56, 56, 56, 0.702); /* Black color with 50% transparency */
     width: 1100px; /* Adjust the width as per your design */
     height: 550px; /* Adjust the height as per your design */
@@ -94,7 +95,17 @@ body {
   button:hover{
     background-color: #5d5d88;
   }
+
+  /*.kiri{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   
+  .kiri1 {
+    float: left;
+  }*/
+
   .tengah {
     display: flex;
     justify-content: center;
@@ -103,6 +114,7 @@ body {
   }
 
   .mores {
+    /*float: right;*/
     display: flex;
     justify-content: center;
   }

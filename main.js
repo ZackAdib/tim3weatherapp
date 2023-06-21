@@ -13,6 +13,8 @@ function GetInfo() {
       
     /*const weatherInfo = document.getElementById('weatherInfo');*/
     weatherInfo.innerHTML = `
+      <div class="kiri">
+      <div class="kiri1">
       <h2>${data.name}</h2>
       <p class="date" >${getCurrentDate()}</p>
       <div class="tengah">
@@ -20,8 +22,10 @@ function GetInfo() {
       <p class="mainTemp" >${data.main.temp.toFixed()}°C</p>
       </div>
       <p class="desc" >${data.weather[0].description}</p>
+      </div>
+      </div>
       <div class="mores">
-      <p class="more" >Feels Like: ${data.main.feels_like.toFixed()}°C</p>
+      <p class="more">Feels Like: ${data.main.feels_like.toFixed()}°C</p>
       <p class="more" >Humidity: ${data.main.humidity}%</p>
       <p class="more" >Wind: ${data.wind.speed} m/s</p>
       </div>

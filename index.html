@@ -93,12 +93,37 @@
     <!-- Animate On Scroll -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script >
-        AOS.init();
-        $('#flexSwitchCheckDefault').click(function(){
-            $('body').toggleClass('dark')
-            $('nav').toggleClass('navbar-dark bg-dark')
-            $('.card, footer').toggleClass('bg-dark')
-        })
+AOS.init();
+
+$(document).ready(function() {
+  // Check if the user prefers dark mode
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    enableDarkMode();
+    $('#flexSwitchCheckDefault').prop('checked', true);
+  }
+
+  // Toggle dark mode when the switch is clicked
+  $('#flexSwitchCheckDefault').click(function() {
+    if ($(this).is(':checked')) {
+      enableDarkMode();
+    } else {
+      disableDarkMode();
+    }
+  });
+});
+
+function enableDarkMode() {
+  $('body').addClass('dark');
+  $('nav').addClass('navbar-dark bg-dark');
+  $('.card, footer').addClass('bg-dark');
+}
+
+function disableDarkMode() {
+  $('body').removeClass('dark');
+  $('nav').removeClass('navbar-dark bg-dark');
+  $('.card, footer').removeClass('bg-dark');
+}
+
     </script>
   </body>
 </html>
